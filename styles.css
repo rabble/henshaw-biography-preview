@@ -196,3 +196,12 @@
 .edition-reading-note{max-width:900px;margin:0 auto 38px;padding:24px clamp(24px,4vw,50px);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}.edition-reading-note h2{font:26px/1.25 var(--serif);margin:0 0 12px}.edition-reading-note p{font:17px/1.65 var(--serif);max-width:700px;margin:0 0 12px}.edition-reading-note a{display:inline-block;min-height:44px;padding:12px 0;font:13px/1.5 var(--sans)}.record-note .record-origin{font:italic 15px/1.5 var(--serif);color:var(--ink);margin-bottom:5px}.record-note.is-suggestive{border-left-style:dashed}.record-note.is-suggestive .record-status{color:var(--red)}.ship-photo img{filter:none;mix-blend-mode:normal}.ship-journey{font:21px/1.4 var(--serif);margin:0 0 20px}.ship-journey span{display:block;font:italic 14px/1.5 var(--serif);color:var(--muted);margin-bottom:7px}
 .wartime-map-wide{grid-column:1/-1;max-width:760px;justify-self:center;width:100%}
 .map-context-label.is-town{font:italic 16px var(--serif);letter-spacing:.3px;fill:#4a4840}
+/* Phone timeline: readable size inside its own sideways-scrolling frame, as the maps do. */
+.timeline-swipe{display:none}
+@media(max-width:600px){
+ .timeline-plot{overflow-x:auto;overscroll-behavior-x:contain;margin-right:-22px;padding-right:22px;-webkit-overflow-scrolling:touch}
+ .timeline-figure .timeline-plot .figure-svg{min-width:720px;width:720px;max-width:none}
+ .timeline-plot .axis-label{font-size:17px}
+ .timeline-plot .event-label{font-size:21px}
+ .timeline-swipe{display:block;font:13px/1.6 var(--sans);color:var(--muted);margin:6px 0 0}
+}
