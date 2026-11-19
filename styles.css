@@ -225,3 +225,9 @@
 .wartime-key .key-hint{display:block;margin-top:2px}
 .wartime-key{display:block}.wartime-key .key-item{display:flex;margin:0 0 4px}
 .wartime-key .war-dot.open{margin-left:0}
+/* Grouped record notes: one frame, one origin line, divided entries. */
+.records-group{max-width:680px;margin:6px 0 40px;border-left:3px solid var(--ink);background:#ede6d3}
+.records-group .record-note{margin:0;border-left:0;background:transparent}
+.records-group .record-note+.record-note{border-top:1px solid #d3c7a9}
+.records-group .record-note+.record-note .record-origin{display:none}
+.records-group .record-note.is-differs .record-status{color:var(--red)}
