@@ -220,3 +220,8 @@
 .document-credit a{color:var(--ink);display:inline-flex;min-height:30px;align-items:center}
 @media(max-width:760px){.document-credit a{min-height:44px}}
 .document-gallery{grid-column:1/-1}
+.wartime-key .key-item{display:inline-flex;align-items:baseline;gap:7px;margin-right:16px}
+.wartime-key .key-item .war-dot{flex:none;align-self:center}
+.wartime-key .key-hint{display:block;margin-top:2px}
+.wartime-key{display:block}.wartime-key .key-item{display:flex;margin:0 0 4px}
+.wartime-key .war-dot.open{margin-left:0}
